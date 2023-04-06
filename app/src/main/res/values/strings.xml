@@ -1,6 +1,17 @@
 <resources>
     <string name="app_name">Doctor At Home</string>
     <string name="register">Register</string>
+    <string name="details">Registration Details</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
+
+    <string name="name">Full Name</string>
+    <string name="age">Age</string>
+    <string name="height">Height</string>
+    <string name="gender">Gender</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone Number</string>
+    <string name="id">ID Proof</string>
+    <string name="address">Address</string>
+    <string name="job">Occupation</string>
 </resources>

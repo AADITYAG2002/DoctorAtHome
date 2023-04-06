@@ -64,13 +64,13 @@ fun RegisterPage(navController: NavHostController) {
         Spacer(modifier = Modifier.height(16.dp))
         Button(
             onClick = {
-                // Perform login logic here
+                navController.navigate("Details")
             },
             modifier = Modifier.fillMaxWidth(),
             colors = ButtonDefaults.buttonColors(backgroundColor = MaterialTheme.colors.primary)
         ) {
             Text(
-                text = "Register",
+                text = "Next",
                 color = Color.White
             )
         }

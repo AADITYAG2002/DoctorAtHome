@@ -97,7 +97,7 @@ fun EditTextField(
     value: String,
     onValueChange: (String) -> Unit
 ) {
-    TextField(
+    OutlinedTextField(
         value = value,
         onValueChange = onValueChange,
         label = { Text(stringResource(label)) },

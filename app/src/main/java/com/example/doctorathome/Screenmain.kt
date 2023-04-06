@@ -14,12 +14,14 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.compose.composable
 import com.example.doctorathome.R
 import com.example.doctorathome.screen.LoginPage
+import com.example.doctorathome.screen.PatientInfo
 import com.example.doctorathome.screen.RegisterPage
 
 
 enum class MainScreen(@StringRes val title: Int) {
     Login(title = R.string.app_name),
-    Register(title = R.string.register)
+    Register(title = R.string.register),
+    Details(title = R.string.details)
 }
 
 @Composable
@@ -36,6 +38,9 @@ fun MainApp(
         }
         composable(route = MainScreen.Register.name) {
             RegisterPage(navController)
+        }
+        composable(route = MainScreen.Details.name) {
+            PatientInfo(navController)
         }
     }
 }
